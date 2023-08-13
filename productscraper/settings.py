@@ -12,7 +12,7 @@ BOT_NAME = "productscraper"
 SPIDER_MODULES = ["productscraper.spiders"]
 NEWSPIDER_MODULE = "productscraper.spiders"
 
-SCRAPEOPS_API_KEY = 'e29ebe2b-4bc9-44ce-8914-911abd369446'
+SCRAPEOPS_API_KEY = ''
 
 SCRAPEOPS_FAKE_USER_AGENT_ENABLED = True
 
