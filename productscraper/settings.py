@@ -12,7 +12,13 @@ BOT_NAME = "productscraper"
 SPIDER_MODULES = ["productscraper.spiders"]
 NEWSPIDER_MODULE = "productscraper.spiders"
 
+SCRAPEOPS_API_KEY = 'e29ebe2b-4bc9-44ce-8914-911abd369446'
 
+SCRAPEOPS_FAKE_USER_AGENT_ENABLED = True
+
+SCRAPEOPS_FAKE_BROWSER_HEADER_ENABLED = True
+
+SCRAPEOPS_NUM_RESULTS = 50
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "productscraper (+http://www.yourdomain.com)"
 
@@ -91,3 +97,12 @@ ITEM_PIPELINES = {
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+
+
+
+DOWNLOADER_MIDDLEWARES = {
+    #'productscraper.middlewares.ScrapeOpsFakeUserAgentMiddleware': 400,
+    'productscraper.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware': 500,
+}
+

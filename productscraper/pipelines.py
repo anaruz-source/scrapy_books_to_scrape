@@ -15,12 +15,11 @@ class ProductscraperPipeline:
 
         fieldNames = adapter.field_names()
 
-
         #strip whitespace from fields except description
         for field_name in fieldNames:
             if( field_name != 'description'):
                 value = adapter.get(field_name)
-                adapter[field_name] = value[0].strip()
+                adapter[field_name] = value.strip()
 
         # Category and Product_type to lowercase
         lowercase_keys = ['category', 'product_type']

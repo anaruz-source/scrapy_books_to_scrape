@@ -1,0 +1,10 @@
+# Parts to build a scrapy 
+https://scrapeops.io/python-scrapy-playbook/freecodecamp-beginner-course/
+
+# webscraping checklist
+
+https://scrapeops.io/web-scraping-playbook/web-scraping-guide-header-user-agents/
+
+# scrap without getting blocked
+
+https://scrapeops.io/web-scraping-playbook/web-scraping-without-getting-blocked/
